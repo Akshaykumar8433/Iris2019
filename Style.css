@@ -1,0 +1,260 @@
+@import url(//fonts.googleapis.com/css?family=Lato:400,900);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+.navbar-inner {
+    background: transparent;
+}
+.navbar-toggle .icon-bar{
+    background-color: #4381f5;
+}
+.im{
+    background-attachment: fixed;
+}
+label{
+    font-size: 50px;
+}
+.after label{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.IRIS{
+      background-image: url('side2.jpg');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      color: #f4f4f4;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .intro{
+      font-size: 2.6em;
+      width: 80%;
+      max-width: 100%;
+      margin: 10px 10% 10px 10%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+  }
+  .intro span{
+      cursor: pointer;
+  }
+  .inspire,.resonate,.integrate,.succeed{
+      font-family: 'Poor Story', cursive;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      font-size: 40px;
+  }
+.design{
+      color: #000000;
+      width: 100%;
+      height: 100vh;
+  }
+  @media (max-width:1000px)
+  {
+      .intro{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 2.5rem;
+      }
+  }
+  .down{
+      position: absolute;
+      top: 92vh;
+      cursor: pointer;
+      opacity: 0.2;
+  }
+  .down:hover{
+      opacity: 1;
+  }
+.sec2{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url('competition1.png');*/
+    background-color: aqua;
+    background-size: cover;
+}
+.sec3{
+    width: 100%;
+    height: 100vh;
+    padding: 11px;
+}
+.sec3 .div1,
+.sec3 .div2,
+.sec3 .div3{
+    width: 400px;
+    height: 100vh;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+.sec3 .div1 img,
+.sec3 .div2 img,
+.sec3 .div3 img{
+    width: 350px;
+}
+.sec3 .div1 .form{
+    margin-top: 20px;
+}
+
+/*.cards{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    padding: 10px;
+    height: 225px;
+    width: 100%;
+    border: 2px solid black;
+    background: #f4f4f4;
+}*/
+.flip-box {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    padding: 10px;
+    height: 225px;
+    width: 100%;
+    border: 2px solid black;
+    background: #f4f4f4;
+    background-color: transparent;
+    perspective: 1000px;
+  }
+.flip-box:hover{
+    cursor: pointer;
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+.flip-box:hover .flip-box-inner {
+transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+position: absolute;
+width: 100%;
+height: 100%;
+backface-visibility: hidden;
+}
+
+.flip-box-front {
+background-color: #bbb;
+cursor: pointer;
+opacity: 1.0;
+filter: alpha(opacity=100);
+color: black;
+}
+
+.flip-box-back {
+background-color: #555;
+cursor: pointer;
+opacity: 1.0;
+filter: alpha(opacity=100);
+color: white;
+transform: rotateY(180deg);
+}
+
+/*Social Icon CSS*/
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 40px;
+	height: 40px;
+	font-size:20px;
+	background-color: #D3D3D3;
+}
+.social-circle li i {
+	margin:0;
+	line-height:40px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	transition: all 0.7s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 1s;
+}
+
+/*for mobile */
+@media only screen and (max-width: 764px){
+    .sec2{
+        width: 100%;
+        height: 190vh;
+    }
+}
+@media only screen and (max-width: 768px){
+    .sec2{
+        width: 100%;
+        height: 170vh;
+    }
+}
